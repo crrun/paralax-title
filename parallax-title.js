@@ -4,7 +4,7 @@ const paralaxText_Arr = paralaxTitle[0].querySelectorAll('h3');
 const paralaxText2_Arr = paralaxTitle[1].querySelectorAll('p');
 const designElem_Arr = Array.from(design.children).filter((elem) => elem.localName == 'section');
 const prec = 100 / paralaxText_Arr.length;
-let ir = 0;
+let ir = 0; 
 const centerTitle = Math.ceil(paralaxText_Arr.length / 2) - (ir + 1);
 var prec_count;
 var prec_text;
@@ -73,4 +73,5 @@ paralaxText_Arr.forEach((text, index) => {
 			}
 		});
 	}
+
 });
